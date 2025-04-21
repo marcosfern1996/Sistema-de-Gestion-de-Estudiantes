@@ -1,0 +1,69 @@
+﻿<Window x:Class="Sistema_de_Gestión_de_Estudiante.ConeccionnBbdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sistema_de_Gestión_de_Estudiante"
+        mc:Ignorable="d"
+        Title="ConeccionnBbdd" Height="500" Width="400">
+    <Grid Background="#1E3A5F">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="Servidor"
+                   TextWrapping="Wrap"
+                   Grid.Row="1"
+                   Margin="5"
+                   TextAlignment="Center"
+                   FontSize="16" 
+                   VerticalAlignment="Center"
+                   Foreground="White"
+                   ></TextBlock>
+        <TextBlock Text="Base de datos"
+                   TextWrapping="Wrap"
+                   Grid.Row="2"
+                   Margin="5"
+                   TextAlignment="Center"
+                   FontSize="16" 
+                   VerticalAlignment="Center"
+                   Foreground="White"
+                   ></TextBlock>
+
+        <TextBox Name="text_dataSourse"
+                 Grid.Row="1"
+                 Grid.Column="1"
+                 Margin="10,20"
+                 FontSize="16"
+                 Background="Beige" Text="DESKTOP-6A61RJD" 
+                 ></TextBox>
+        <TextBox Name="text_initialCatalog"
+                 Grid.Row="2"
+                 Grid.Column="1"
+                 Margin="10,20"
+                 FontSize="16"
+                 Background="Beige" Text="SistemaEstudiantes"
+                 ></TextBox>
+
+
+        <Button Name="ConectarBbdd"
+                Grid.Column="1"
+                Grid.Row="6"
+                Margin="10"
+                Content="Conectar"
+                FontSize="25"
+                Click="ConectarBbdd_Click"
+                ></Button>
+    </Grid>
+</Window>
